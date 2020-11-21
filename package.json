@@ -3,7 +3,12 @@
     "version": "1.0.0",
     "license": "FDB",
     "scripts": {
-        "start": "webpack-dev-server --open"
+       "dev": "react-scripts start",
+        "start": "serve -s build",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject",
+        "heroku-postbuild": "npm run build"
     },
     "dependencies": {
         "formik": "^1.5.2",
